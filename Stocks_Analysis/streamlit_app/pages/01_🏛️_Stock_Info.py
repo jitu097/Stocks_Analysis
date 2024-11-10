@@ -7,7 +7,7 @@ st.set_page_config(
     page_icon="🏛️",
 )
 
-with open("D:\Stocks_analysis_B15-main\Stocks_analysis_B15-main\streamlit_app\designing.css") as source_des:
+with open("Stocks_Analysis\streamlit_app\designing.css") as source_des:
     st.markdown(f'<style>{source_des.read()}</style>', unsafe_allow_html=True)
 
 st.markdown("""

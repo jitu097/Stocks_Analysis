@@ -11,7 +11,7 @@ from statsmodels.tsa.ar_model import AutoReg
 
 
 def fetch_stocks():
-    df = pd.read_csv(Path.cwd() / "data" / "equity_issuers.csv")
+    df = pd.read_csv(Path.cwd()/"Stocks_Analysis" / "data" / "equity_issuers.csv")
     df = df[["Security Code", "Issuer Name"]]
     stock_dict = dict(zip(df["Security Code"], df["Issuer Name"]))
     return stock_dict
